@@ -32,4 +32,9 @@ if not os.path.isdir(images_path):
 
 generate_images(images_path, order=5)  # generate images with numbers
 images = sorted(glob.glob(os.path.join(images_path, '*.png')))  # list of the images
+images_required = order**2 + order + 1
+images_supplied = len(images)
+if images_supplied < images_required :
+    raise ValueError(f"For order {order} you neeed {images_required} images, not {images_supplied}")
+
 create_sheets(filename, order, images)  # create the PDF with cards
