@@ -33,9 +33,9 @@ pip install -r requirements.txt
 
 ## Usage
 
-Copy input *.png images into `./images/`.  Alternatively you can set another folder with `- o` option (with `-h` you can s mor options).  Preferably the images should have transparent background.
+Copy input *.png images into `./images/`.  Alternatively you can set another folder with `- o` option (with `-h` you can see more options).  Preferably the images should have transparent background.
 
-Default order of the game is 5 and number of images per card is 6, you need 31 input images for this order. Other possibilities see in the table blow. The order can b set with `-O` option/
+Default order of the game is 5 and number of images per card is 6, you need 31 input images for this order. Other possibilities see in the table blow. The order can b set with `-O` option:
 | order | images per card | images required |
 | :---: |       :---:     |     :---:       |
 |   2   |         3       |       7         |
